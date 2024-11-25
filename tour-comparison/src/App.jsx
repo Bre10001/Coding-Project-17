@@ -1,3 +1,5 @@
+// Task 1: Create Root Component
+
 import React from "react"; // Import React library
 import Gallery from "./Gallery.jsx"; // Import Gallery component
 import './App.css'; // Import app CSS for styling

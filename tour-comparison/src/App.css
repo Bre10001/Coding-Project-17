@@ -1,0 +1,115 @@
+/* App.css */
+/*Task 3: Create CSS Styling*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-weight: 700;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .tour-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tour-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .tour-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .tour-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .tour-info h2 {
+    margin: 10px 0;
+    font-size: 1.6em;
+    color: #34495e;
+  }
+  
+  .tour-price {
+    color: #16a085;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .tour-info p {
+    color: #7f8c8d;
+    margin: 15px 0;
+  }
+  
+  .toggle-btn {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .toggle-btn:hover {
+    color: #0056b3;
+  }
+  
+  .not-interested {
+    display: block;
+    width: 100%;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .not-interested:hover {
+    background: #c0392b;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      gap: 20px;
+    }
+  
+    .tour-card {
+      max-width: 90%;
+    }
+  }
+  
